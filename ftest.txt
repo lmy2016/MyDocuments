@@ -1,2 +1,3 @@
 hello , this is my first day , thank everyone ,see me.
 add here ------
+add here2 ----- git commit ftest.txt -m ""
