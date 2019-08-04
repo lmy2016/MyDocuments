@@ -1,0 +1,5 @@
+git init   #把一个目录变成git可管理的仓库
+
+git add    #在仓库中增加一个文件
+
+git commit  #将add后的文件提交至仓库管理
