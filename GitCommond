@@ -2,4 +2,8 @@ git init   #把一个目录变成git可管理的仓库
 
 git add    #在仓库中增加一个文件
 
-git commit  #将add后的文件提交至仓库管理
+git commit  -m "log"   #将add后的文件提交至仓库管理
+
+git status  #查看仓库当前状态，如：哪些文件做了修改
+
+git diff <文件>  #查看一个文件具体哪些地方做了修改:
