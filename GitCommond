@@ -6,4 +6,9 @@ git commit  -m "log"   #将add后的文件提交至仓库管理
 
 git status  #查看仓库当前状态，如：哪些文件做了修改
 
-git diff <文件>  #查看一个文件具体哪些地方做了修改:
+git diff <文件>  #查看一个文件具体哪些地方做了修改
+
+git reset -hard commit_id    #版本回退到commit_id
+
+git log    #查看提交历史，以便确定要回退到哪个版本
+git reflog    #查看命令历史，以便回到未来的哪个版本
