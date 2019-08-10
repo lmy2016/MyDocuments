@@ -18,3 +18,7 @@ git status  #查看暂存区的修改状态
 工作区 --git add--> 暂存区  --git commit-->  master
 
 git diff hash1 hash2 <文件名> #查看两个版本之间的差异
+
+git checkout -- file   #将工作区的修改撤销（1 暂存区有内容，会回退到暂存区最新状态 2 暂存区无内容，则回退到版本最新状态）
+
+git reset HEAD file    #撤销暂存区的修改
