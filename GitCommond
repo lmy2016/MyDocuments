@@ -43,3 +43,7 @@ git remote set-url origin newAddress #方法一
 #方法二：先删除后新增
 git remote rm origin
 git remote add origin newAddress     
+
+git clone 远端仓库地址   #克隆
+
+
