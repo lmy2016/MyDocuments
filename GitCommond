@@ -25,3 +25,15 @@ git reset HEAD file    #撤销暂存区的修改
 
 git rm file
 git commit file -m ""  #删除文件并提交
+
+
+##############本地创建仓库，第一次提交到远程仓库的方法##################
+
+git init
+git add .
+git commit -m ""
+git remote add origin 远程仓库地址
+git pull origin master --allow-unrelated-histories  #--allow-unrelated-histories表示合并两个独立启动的仓库的历史，git pull命令相当于git fetch和git merge的集合
+git push -u origin master   #将本地修改推送到远程仓库，第二次提交将不需要-u命令
+
+########################################################################
