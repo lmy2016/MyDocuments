@@ -78,4 +78,8 @@ git push origin dev
 
 #########################################
 
-
+git stash         #缓存未提交的内容
+git stash list    #显示缓存记录
+git stash apply   #恢复缓存的内容
+git stash drop    #删除缓存记录
+git stash pop     #恢复内容并删除缓存记录
