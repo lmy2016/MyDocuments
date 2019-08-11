@@ -52,3 +52,30 @@ git merge <name>  #合并修改
 git checkout 分支名 #切换分支
 git branch 分支名   #新建分支
 git checkout -b 分支名   #新建并切换分支
+
+##############多人协作###################
+
+人员1：
+git clone 远程仓库地址
+#由于clone后本地之后master分支，故需要执行命令链接dev分支
+git checkout -b dev origin/dev
+#修改后将修改推送至远程仓库
+git push origin dev
+
+人员2：
+#在基于人员1修改前的分支修改，人员1已将修改推送至远端仓库，人员2此时也需要推送自己的修改
+git push origin dev
+#执行后报错，提示需要git pull，故执行git pull
+git pull
+#仍然报错，原因是没有指定本地dev与远端origin/dev之间的连接，按提示执行命令
+git branch --set-upstream-to=origin/dev dev
+#然后继续执行git pull
+git pull
+#提示有冲突，解决冲突后提交修改
+git commint -m ""
+#推送修改至远程仓库
+git push origin dev
+
+#########################################
+
+
