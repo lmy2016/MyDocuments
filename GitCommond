@@ -46,4 +46,6 @@ git remote add origin newAddress
 
 git clone 远端仓库地址   #克隆
 
-
+git branch  #查看分支
+git checkout -d <name>  #删除分支
+git merge <name>  #合并修改
