@@ -37,3 +37,9 @@ git pull origin master --allow-unrelated-histories  #--allow-unrelated-histories
 git push -u origin master   #将本地修改推送到远程仓库，第二次提交将不需要-u命令
 
 ########################################################################
+
+#远程仓库重命名后，本地仓库修改命令
+git remote set-url origin newAddress #方法一
+#方法二：先删除后新增
+git remote rm origin
+git remote add origin newAddress     
