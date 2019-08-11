@@ -49,3 +49,6 @@ git clone 远端仓库地址   #克隆
 git branch  #查看分支
 git checkout -d <name>  #删除分支
 git merge <name>  #合并修改
+git checkout 分支名 #切换分支
+git branch 分支名   #新建分支
+git checkout -b 分支名   #新建并切换分支
