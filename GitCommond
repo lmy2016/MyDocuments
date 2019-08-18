@@ -83,3 +83,11 @@ git stash list    #显示缓存记录
 git stash apply   #恢复缓存的内容
 git stash drop    #删除缓存记录
 git stash pop     #恢复内容并删除缓存记录
+
+git tag <tagName>       #创建一个标签
+git tag -d <tagName>    #删除一个标签
+git tag                 #查看有哪些标签
+git push origin --tags  #将本地标签推送至远程
+git push origin :refs/tags/<tagname>  #删除远程的标签
+
+
